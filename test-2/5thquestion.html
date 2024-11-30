@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid </title>
+    <style>
+        .gallery {
+            display: grid;
+            gap: 10px;
+        }
+        @media (max-width: 10px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (min-width: 10px) and (max-width: 10px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 10px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="th.jpg" alt="img1" width="250px">
+        <img src="tr.jpg" alt="img2" width="250px">
+    </div>
+</body>
+</html>
